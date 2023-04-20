@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ol태그 안의 li 4개 생성 ol>li*4 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!-- ol태그 안의 li 4개 생성 content내용넣기 ol>li*4{CONTENT} -->
+    <ol>
+        <li>CONTENT</li>
+        <li>CONTENT</li>
+        <li>CONTENT</li>
+        <li>CONTENT</li>
+    </ol>
+
+    <!-- ol태그 안의 li 4개 생성 content내용넣기 + 순번 정하기 ol>li*4{CONTENT$}  -->
+    <ol>
+        <li>CONTENT1</li>
+        <li>CONTENT2</li>
+        <li>CONTENT3</li>
+        <li>CONTENT4</li>
+    </ol>
+
+    <!-- ol>li*4+ul*2 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <ul></ul>
+        <ul></ul>
+    </ol>
+
+    <!-- ol>li*2+ul*2>li*3{TEST$} -->
+    <ol>
+        <li></li>
+        <li></li>
+        <ul>
+            <li>TEST1</li>
+            <li>TEST2</li>
+            <li>TEST3</li>
+        </ul>
+        <ul>
+            <li>TEST1</li>
+            <li>TEST2</li>
+            <li>TEST3</li>
+        </ul>
+    </ol>
+
+    <!-- ul>li+ul>li*4{ITEM$} -->
+    <ul>
+        <li></li>
+        <ul>
+            <li>ITEM1</li>
+            <li>ITEM2</li>
+            <li>ITEM3</li>
+            <li>ITEM4</li>
+        </ul>
+    </ul>
+</body>
+</html>
