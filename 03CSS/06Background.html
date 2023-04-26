@@ -7,10 +7,10 @@
     <title>Document</title>
     <style>
         *{}
-        body{margin: 0px;}
+        body{margin: 0px; height: 3000px;}
         #wapper{
-            width: 500px;
-            height: 500px;
+            width: 100%;
+            height: 3000px;
             border: 1px solid;
             margin: 10px;
 
@@ -20,13 +20,18 @@
             /* 사이즈 auto : 이미지크기 그대로 적용, cover : 채우기, 
             contain : 이미지크기를 최대한 유지하면서 컨테이너 공백없이 채우기, 
             가로세로 : %, % */
-            background-size: 40% 60%;
+            /* background-size: 40% 60%; */
+            background-size: contain;
+            
 
             /* 반복처리 */
             background-repeat: no-repeat;
             
             /* 배치 */
             background-position: center;
+
+            /* 스크롤시 이미지 고정여부 */
+            background-attachment: fixed;
         }
     </style>
 </head>
