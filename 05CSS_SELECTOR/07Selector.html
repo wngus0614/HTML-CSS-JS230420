@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{}
+        body{margin: 0px;}
+        ul{list-style: none; padding: 0px;}
+        .wapper{}
+        .wapper>header{}
+        .wapper>header>.top-header{
+            width: 1180px;
+            height: 30px;
+            background-color: beige;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+        .wapper>header>.top-header>ul{
+            display: flex;
+            justify-content: right;
+        }
+        .wapper>header>.top-header>ul>li{
+            width: 100px;
+            text-align: center;
+        }
+        .wapper>header>.top-header>ul>li>a{
+            text-decoration: none;
+            color: black;
+            display: block;   
+            position: relative;     
+        }
+        .wapper>header>.top-header>ul>li>a::after{
+            content: '|';
+            position: absolute;
+            top: 0px;
+            left: 100%;
+        }
+        /* MENU4 뒤에 '|' 기호 없애기 */
+        .wapper>header>.top-header>ul>li:last-child a::after{
+            content: '';
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="wapper">
+        <header>
+            <div class="top-header">
+                <ul>
+                    <li><a href="">MENU1</a></li>
+                    <li><a href="">MENU2</a></li>
+                    <li><a href="">MENU3</a></li>
+                    <li><a href="">MENU4</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+
+        </nav>
+    </div>
+</body>
+</html>
