@@ -25,11 +25,11 @@
         padding-right: 900px;
         display: flex;
         position: relative;
-        left: -380px;
+        left: -430px;
         color: yellow;
         }   
-        
-        
+
+    
         ul{
             list-style: none;
             padding: 0px;
@@ -41,17 +41,46 @@
             width: 100%;
             height: 150px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             background-color: rgb(28,92,57);
             border-bottom: 1px solid rgb(248, 224, 188);
         }
         header>.LOGO>a>img{
             width: 100%;
             height: 150px;
+            right: 110px;
+        }
+        header>.group{
+
+        }
+        header>.group>.orderlogin{
+
+        }
+        header>.group>.orderlogin>a{
+            position: relative;
+            top: 113px;
+            right: 68px;
+            color: gray;
+            font-size: 14px;
+            font-weight: bold;        
+        }
+        header>.group>.orderlogin>img{
+            position: relative;
+            width: 24px;
+            height: 24px;
+            top: 120px;
+            right: 70px;
+        }
+        header>.group>.search>img{
+            position: relative;
+            width: 32px;
+            height: 32px;
+            top: 90px;
+            right: -85px;
         }
 
         body{
-            height: 3000px;
+            height: 2700px;
 
         }
         /* Sticky */
@@ -130,7 +159,55 @@
         .one>.gnb>.menu>li>.submenu>li>a:hover {
             color: yellow;
         }
+        /* sns */
+        .one>.gnb>.menu>.sns{
+            position: relative;
+            right: -300px;
+            top: 10px;
+        }
 
+        /* 푸터 */
+        footer {
+    background-color: #ffd141;
+    color: #225D39;
+    padding: 160px;
+    height: 300px;
+}
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer_write {
+    text-align: center;
+    position: relative;
+    top: 10px;
+      margin-bottom: 20px;
+
+}
+
+.footer_write p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.policy{
+    margin-top: 10px;
+}
+.policy ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy li {
+    margin-right: 20px;
+}
+
+.policy a {
+    text-decoration: none;
+    color: #225D39;
+}
     </style>
 </head>
 <body>
@@ -140,6 +217,15 @@
                  <img src="./img/41126c60ecbce.jpg" alt="">
             </a>
         </div>
+        <div class="group">
+            <div class="orderlogin">
+                <img src="img/box-arrow-in-right.svg" alt="">
+                <a href="http://127.0.0.1:5500/06CSS_POSITION/login.html">ORDER LOGIN</a>
+            </div>
+                <div class="search">
+                 <img src="./img/search_FILL0_wght400_GRAD0_opsz48.svg" alt="alt">
+             </div>
+        </div>
     </header>
     <!-- <div class="quickMenu"></div> -->
     <div class="one">
@@ -148,6 +234,7 @@
                 <li>
                     <a href="" ><span class="material-symbols-outlined">menu</span></a>
                 </li>
+
                 <li>
                     <a href="http://127.0.0.1:5500/06CSS_POSITION/13Prac.html" style=" color: yellow;">마실홈</a>
                 </li>
@@ -198,6 +285,15 @@
                         <li><a href="">마실이야기</a></li>
                     </ul>
                 </li>
+                <div class="sns">
+                        <img src="img/a3d1c3da0c96f.png" alt=""
+                            style="width: 35px; height: 35px;">
+                        <img src="img/786a5b2bf01ad.png" alt=""
+                            style="width: 35px; height: 35px;">
+                        <img src="img/114817d5a6d9e.png" alt="" 
+                            style="width: 32px; height: 35px;">
+
+                </div>
             </ul>
         </nav>
     </div>
@@ -207,8 +303,40 @@
     <div>
         <img src="./img/4c2a38e3c1825.png" style="width: 100%; height: 660px;" alt="">
     </div>
-    <div style="height: 600px; background-color: rosybrown;">
+        <img src="./img/1b929019ad4a5.png" style="width: 100%; height: 600px;" alt="">
     </div>
 
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <img src="img/KakaoTalk_20230504_131109669.png" alt="">
+
+        </div>
+        <div class="footer_write" style="font-size: 14px;">
+            <p>
+                <span >대구광역시 동구 동대구로 496, 1층 (주)마실에프앤비</span></p>
+            <p>
+                <span>본사대표전화 : 1577-0656ㅣFAX 053-801-2201</span></p>
+            <p>
+                <span>E-Mail : masilcup@daum.netㅣ법인명 : (주)마실에프앤비</span></p>
+            <p>
+                <span>대표자 : 한창훈ㅣ사업자등록번호 : 786-88-01703</span></p>
+            <p>
+                <span>Copyright ⓒ 2023 마실커피 All rights reserved.</span></p>
+        </div>
+        <div class="policy" style="font-size: 14px;">
+            <ul>
+                <li>
+                    <a href="">이용약관</a>
+                </li>
+                <li>
+                    <a href="">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="">about us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
