@@ -25,7 +25,7 @@
         padding-right: 900px;
         display: flex;
         position: relative;
-        left: -430px;
+        margin: 0 auto;
         color: yellow;
         }   
 
@@ -41,43 +41,63 @@
             width: 100%;
             height: 150px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             background-color: rgb(28,92,57);
             border-bottom: 1px solid rgb(248, 224, 188);
+            /* text-align: center; */
+        }
+        header>.LOGO{
+            position: relative;
+            width: 1000px;
+            height: 150px;
         }
         header>.LOGO>a>img{
-            width: 100%;
             height: 150px;
-            right: 110px;
+            margin-right: 250px;
+    
         }
         header>.group{
-
+            width: 200px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 120px;
         }
         header>.group>.orderlogin{
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         header>.group>.orderlogin>a{
-            position: relative;
-            top: 113px;
-            right: 68px;
+            /* top: 113px;
+            right: 68px; */
             color: gray;
             font-size: 14px;
-            font-weight: bold;        
+            font-weight: bold;      
+            padding: 0px 0px 0px 5.6px; 
+            height: 28px;
+            line-height: 28px;
         }
-        header>.group>.orderlogin>img{
+        /* header>.group>.orderlogin>img{
             position: relative;
             width: 24px;
             height: 24px;
             top: 120px;
             right: 70px;
+        } */
+        header>.group>.search{
+            position: relative;
+            height: 32px;
+            display: flex;
+            justify-content: center;
         }
-        header>.group>.search>img{
+        /* header>.group>.search>img{
             position: relative;
             width: 32px;
             height: 32px;
             top: 90px;
             right: -85px;
-        }
+        } */
 
         body{
             height: 2700px;
@@ -107,11 +127,10 @@
         .one>.gnb>.menu{
             display: flex;
             justify-content: center;
-            border: 1px solid gray;
             background-color: rgb(28,92,57);
-            width: 100%;
             height: 60px;
-            position: relative;
+            width: 100%;
+            
         }
         
         .one>.gnb>.menu>li{
@@ -161,11 +180,24 @@
         }
         /* sns */
         .one>.gnb>.menu>.sns{
-            position: relative;
+            /* position: relative;
             right: -300px;
-            top: 10px;
+            top: 10px; */
+            display:flex;
+        
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            
+            /* text-align: right; */
         }
-
+        .one>.gnb>.menu>.sns img{
+            display:block;
+            margin-left:5px;
+        }
+        .one>.gnb>.menu>.sns img:last-child{
+            margin-right:10px;
+        }
         /* 푸터 */
         footer {
     background-color: #ffd141;
@@ -224,7 +256,8 @@
             </div>
                 <div class="search">
                  <img src="./img/search_FILL0_wght400_GRAD0_opsz48.svg" alt="alt">
-             </div>
+   
+                </div>
         </div>
     </header>
     <!-- <div class="quickMenu"></div> -->
@@ -286,14 +319,19 @@
                     </ul>
                 </li>
                 <div class="sns">
+                        <a href="">
                         <img src="img/a3d1c3da0c96f.png" alt=""
                             style="width: 35px; height: 35px;">
-                        <img src="img/786a5b2bf01ad.png" alt=""
+                        </a>
+                            <a href="">
+                            <img src="img/786a5b2bf01ad.png" alt=""
                             style="width: 35px; height: 35px;">
-                        <img src="img/114817d5a6d9e.png" alt="" 
+                        </a>
+                            <a href="">
+                            <img src="img/114817d5a6d9e.png" alt="" 
                             style="width: 32px; height: 35px;">
-
-                </div>
+                        </a>
+            </div>
             </ul>
         </nav>
     </div>
