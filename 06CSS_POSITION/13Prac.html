@@ -8,240 +8,21 @@
 
     <!-- reset cdn -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <!-- Google meterial-icon CDN -->
+    <!-- 메뉴바 Google meterial-icon CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 700,
-          'GRAD' 0,
-          'opsz' 48;
+    <!-- 전체 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 헤더 -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- 메인 -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- 푸터 -->
+    <link rel="stylesheet" href="css/footer.css">
 
-        width: 15px;
-        height: 15px;
-        padding-top: 15px;
-        padding-right: 900px;
-        display: flex;
-        position: relative;
-        margin: 0 auto;
-        color: yellow;
-        }   
 
-    
-        ul{
-            list-style: none;
-            padding: 0px;
-        }
-        a{
-            text-decoration: none;
-        }
-        header{
-            width: 100%;
-            height: 150px;
-            display: flex;
-            justify-content: flex-end;
-            background-color: rgb(28,92,57);
-            border-bottom: 1px solid rgb(248, 224, 188);
-            /* text-align: center; */
-        }
-        header>.LOGO{
-            position: relative;
-            width: 1000px;
-            height: 150px;
-        }
-        header>.LOGO>a>img{
-            height: 150px;
-            margin-right: 250px;
-    
-        }
-        header>.group{
-            width: 200px;
-            height: 40px;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 120px;
-        }
-        header>.group>.orderlogin{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        header>.group>.orderlogin>a{
-            /* top: 113px;
-            right: 68px; */
-            color: gray;
-            font-size: 14px;
-            font-weight: bold;      
-            padding: 0px 0px 0px 5.6px; 
-            height: 28px;
-            line-height: 28px;
-        }
-        /* header>.group>.orderlogin>img{
-            position: relative;
-            width: 24px;
-            height: 24px;
-            top: 120px;
-            right: 70px;
-        } */
-        header>.group>.search{
-            position: relative;
-            height: 32px;
-            display: flex;
-            justify-content: center;
-        }
-        /* header>.group>.search>img{
-            position: relative;
-            width: 32px;
-            height: 32px;
-            top: 90px;
-            right: -85px;
-        } */
-
-        body{
-            height: 2700px;
-
-        }
-        /* Sticky */
-        .one{
-            position: sticky;
-            top: 0px;
-        }
-        /* 서브메뉴 전체다운 */
-        /* 2단 기본박스 */
-        #nav_wrap{
-            background: rgba(24, 23, 23, 0.7);
-            width: 100%;
-            height: 60px;
-            position: absolute;
-            transition: 0.5s;
-            overflow: hidden;
-        }
-        /* 마우스오버, 2단 펼침 박스, 크기변형 */
-        #nav_wrap:hover{
-            height: 380px;
-        }
-
-        /* 메뉴바 꾸미기 */
-        .one>.gnb>.menu{
-            display: flex;
-            justify-content: center;
-            background-color: rgb(28,92,57);
-            height: 60px;
-            width: 100%;
-            
-        }
-        
-        .one>.gnb>.menu>li{
-            width: 128px;
-            position: relative;
-        }
-        /* 메뉴바 글자 간격, 꾸미기 */
-        .one>.gnb>.menu>li>a{
-            display: block;
-            height: 60px;
-            text-align: center;
-            line-height: 60px;
-            font-weight: 900;
-            color: white;
-        }
-        /* 메뉴 마우스오버시 변경사항 */
-        .one>.gnb>.menu>li>a:hover{
-            color: gray;
-        }
-        .one>.gnb>.menu>li>a:hover .material-symbols-outlined{
-            color: gray;
-        }
-        /* 서브메뉴 정렬 */
-        .one>.gnb>.menu>li>.submenu{
-            position: absolute;
-            left: 25px;
-            top: 60px;
-        }
-        /* 서브메뉴 간격 */
-        .one>.gnb>.menu>li>.submenu>li{
-            height: 35px;
-            line-height: 60px;
-            text-align: center;
-
-        }
-        .one>.gnb>.menu>li>.submenu::before{
-            
-        }
-
-        /* 서브메뉴 글자색 */
-        .one>.gnb>.menu>li>.submenu>li>a{
-            color: white;
-        }
-        /* 서브메뉴 글자 마우스오버시 변경사항 */
-        .one>.gnb>.menu>li>.submenu>li>a:hover {
-            color: yellow;
-        }
-        /* sns */
-        .one>.gnb>.menu>.sns{
-            /* position: relative;
-            right: -300px;
-            top: 10px; */
-            display:flex;
-        
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            
-            /* text-align: right; */
-        }
-        .one>.gnb>.menu>.sns img{
-            display:block;
-            margin-left:5px;
-        }
-        .one>.gnb>.menu>.sns img:last-child{
-            margin-right:10px;
-        }
-        /* 푸터 */
-        footer {
-    background-color: #ffd141;
-    color: #225D39;
-    padding: 160px;
-    height: 300px;
-}
-.footer {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.footer_write {
-    text-align: center;
-    position: relative;
-    top: 10px;
-      margin-bottom: 20px;
-
-}
-
-.footer_write p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.policy{
-    margin-top: 10px;
-}
-.policy ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.policy li {
-    margin-right: 20px;
-}
-
-.policy a {
-    text-decoration: none;
-    color: #225D39;
-}
-    </style>
 </head>
+
 <body>
     <header>
         <div class="LOGO">
@@ -261,7 +42,7 @@
         </div>
     </header>
     <!-- <div class="quickMenu"></div> -->
-    <div class="one">
+    <div class="one" id="one">
         <nav class="gnb" id="nav_wrap">
             <ul class="menu" >
                 <li>
@@ -335,6 +116,7 @@
             </ul>
         </nav>
     </div>
+    <div class="hi">
     <div>
         <img src="./img/3c33583bc114a.jpg" style="width: 100%; height: 660px;" alt="">
     </div>
@@ -343,7 +125,7 @@
     </div>
         <img src="./img/1b929019ad4a5.png" style="width: 100%; height: 600px;" alt="">
     </div>
-
+</div>
     <!-- footer -->
     <footer>
         <div class="footer">
